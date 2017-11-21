@@ -9,7 +9,15 @@
 import Cocoa
 
 class Document: NSDocument {
+    
+    var playerModule:FMPlayerViewController!
+    var mediaModule:FMMediaBinViewController!
+    var timelineModule:FMTimelineViewController!
 
+    @IBOutlet weak var mediaBox: NSBox!
+    @IBOutlet weak var playerBox: NSBox!
+    @IBOutlet weak var timelineBox: NSBox!
+    
     override init() {
         super.init()
         // Add your subclass-specific initialization here.
@@ -17,6 +25,19 @@ class Document: NSDocument {
 
     override class var autosavesInPlace: Bool {
         return true
+    }
+    
+    
+    
+    override func windowControllerDidLoadNib(_ windowController: NSWindowController) {
+        playerModule = FMPlayerViewController()
+        playerBox.contentView = playerModule.view
+        
+        mediaModule = FMMediaBinViewController()
+        mediaBox.contentView = mediaModule.view
+        
+        timelineModule = FMTimelineViewController()
+        timelineBox.contentView = timelineModule.view
     }
 
     override var windowNibName: NSNib.Name? {
