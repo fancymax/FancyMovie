@@ -13,6 +13,7 @@
 		11058B151FC446CC0015B8E9 /* FMMediaBinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11058B131FC446CC0015B8E9 /* FMMediaBinViewController.xib */; };
 		11058B181FC446DE0015B8E9 /* FMTimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11058B161FC446DE0015B8E9 /* FMTimelineViewController.swift */; };
 		11058B191FC446DE0015B8E9 /* FMTimelineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11058B171FC446DE0015B8E9 /* FMTimelineViewController.xib */; };
+		1175C2411FC6E39B003C41FF /* FMPlayerbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1175C2401FC6E39B003C41FF /* FMPlayerbackView.swift */; };
 		11843AD91FBC5784005ABE98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11843AD81FBC5784005ABE98 /* AppDelegate.swift */; };
 		11843ADB1FBC5784005ABE98 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11843ADA1FBC5784005ABE98 /* Document.swift */; };
 		11843ADE1FBC5784005ABE98 /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11843ADC1FBC5784005ABE98 /* Document.xib */; };
@@ -46,6 +47,7 @@
 		11058B131FC446CC0015B8E9 /* FMMediaBinViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FMMediaBinViewController.xib; sourceTree = "<group>"; };
 		11058B161FC446DE0015B8E9 /* FMTimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMTimelineViewController.swift; sourceTree = "<group>"; };
 		11058B171FC446DE0015B8E9 /* FMTimelineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FMTimelineViewController.xib; sourceTree = "<group>"; };
+		1175C2401FC6E39B003C41FF /* FMPlayerbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMPlayerbackView.swift; sourceTree = "<group>"; };
 		11843AD51FBC5784005ABE98 /* FancyMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FancyMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11843AD81FBC5784005ABE98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11843ADA1FBC5784005ABE98 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
@@ -87,6 +89,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11058B1A1FC44D710015B8E9 /* TimelineModule */ = {
+			isa = PBXGroup;
+			children = (
+				11058B161FC446DE0015B8E9 /* FMTimelineViewController.swift */,
+				11058B171FC446DE0015B8E9 /* FMTimelineViewController.xib */,
+			);
+			path = TimelineModule;
+			sourceTree = "<group>";
+		};
+		1175C23F1FC6E373003C41FF /* PlayerModule */ = {
+			isa = PBXGroup;
+			children = (
+				11058B0E1FC4462D0015B8E9 /* FMPlayerViewController.swift */,
+				11058B0F1FC4462D0015B8E9 /* FMPlayerViewController.xib */,
+				1175C2401FC6E39B003C41FF /* FMPlayerbackView.swift */,
+			);
+			path = PlayerModule;
+			sourceTree = "<group>";
+		};
 		11843ACC1FBC5784005ABE98 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +131,8 @@
 		11843AD71FBC5784005ABE98 /* FancyMovie */ = {
 			isa = PBXGroup;
 			children = (
+				1175C23F1FC6E373003C41FF /* PlayerModule */,
+				11058B1A1FC44D710015B8E9 /* TimelineModule */,
 				11843AD81FBC5784005ABE98 /* AppDelegate.swift */,
 				11843ADA1FBC5784005ABE98 /* Document.swift */,
 				11843ADC1FBC5784005ABE98 /* Document.xib */,
@@ -117,12 +140,8 @@
 				11843AE11FBC5784005ABE98 /* MainMenu.xib */,
 				11843AE41FBC5784005ABE98 /* Info.plist */,
 				11843AE51FBC5784005ABE98 /* FancyMovie.entitlements */,
-				11058B0E1FC4462D0015B8E9 /* FMPlayerViewController.swift */,
-				11058B0F1FC4462D0015B8E9 /* FMPlayerViewController.xib */,
 				11058B121FC446CC0015B8E9 /* FMMediaBinViewController.swift */,
 				11058B131FC446CC0015B8E9 /* FMMediaBinViewController.xib */,
-				11058B161FC446DE0015B8E9 /* FMTimelineViewController.swift */,
-				11058B171FC446DE0015B8E9 /* FMTimelineViewController.xib */,
 			);
 			path = FancyMovie;
 			sourceTree = "<group>";
@@ -214,6 +233,11 @@
 					11843AD41FBC5784005ABE98 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 					11843AE91FBC5784005ABE98 = {
 						CreatedOnToolsVersion = 9.0;
@@ -285,6 +309,7 @@
 				11058B141FC446CC0015B8E9 /* FMMediaBinViewController.swift in Sources */,
 				11058B181FC446DE0015B8E9 /* FMTimelineViewController.swift in Sources */,
 				11058B101FC4462D0015B8E9 /* FMPlayerViewController.swift in Sources */,
+				1175C2411FC6E39B003C41FF /* FMPlayerbackView.swift in Sources */,
 				11843ADB1FBC5784005ABE98 /* Document.swift in Sources */,
 				11843AD91FBC5784005ABE98 /* AppDelegate.swift in Sources */,
 			);
@@ -451,7 +476,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = FancyMovie/FancyMovie.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = FancyMovie/Info.plist;
@@ -466,7 +490,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = FancyMovie/FancyMovie.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = FancyMovie/Info.plist;
