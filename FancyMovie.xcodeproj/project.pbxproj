@@ -131,6 +131,7 @@
 		11843AD71FBC5784005ABE98 /* FancyMovie */ = {
 			isa = PBXGroup;
 			children = (
+				11F692DA1FC82517003E6C0F /* MediaModule */,
 				1175C23F1FC6E373003C41FF /* PlayerModule */,
 				11058B1A1FC44D710015B8E9 /* TimelineModule */,
 				11843AD81FBC5784005ABE98 /* AppDelegate.swift */,
@@ -140,8 +141,6 @@
 				11843AE11FBC5784005ABE98 /* MainMenu.xib */,
 				11843AE41FBC5784005ABE98 /* Info.plist */,
 				11843AE51FBC5784005ABE98 /* FancyMovie.entitlements */,
-				11058B121FC446CC0015B8E9 /* FMMediaBinViewController.swift */,
-				11058B131FC446CC0015B8E9 /* FMMediaBinViewController.xib */,
 			);
 			path = FancyMovie;
 			sourceTree = "<group>";
@@ -162,6 +161,15 @@
 				11843AFB1FBC5784005ABE98 /* Info.plist */,
 			);
 			path = FancyMovieUITests;
+			sourceTree = "<group>";
+		};
+		11F692DA1FC82517003E6C0F /* MediaModule */ = {
+			isa = PBXGroup;
+			children = (
+				11058B121FC446CC0015B8E9 /* FMMediaBinViewController.swift */,
+				11058B131FC446CC0015B8E9 /* FMMediaBinViewController.xib */,
+			);
+			path = MediaModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
