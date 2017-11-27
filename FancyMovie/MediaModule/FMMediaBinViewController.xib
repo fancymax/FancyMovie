@@ -8,6 +8,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="FMMediaBinViewController" customModule="FancyMovie" customModuleProvider="target">
             <connections>
+                <outlet property="mediaCollectionView" destination="x19-uT-ueT" id="pUC-4j-nRY"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>

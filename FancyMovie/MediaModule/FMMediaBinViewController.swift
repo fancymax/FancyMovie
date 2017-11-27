@@ -10,9 +10,17 @@ import Cocoa
 
 class FMMediaBinViewController: NSViewController {
 
+    @IBOutlet weak var mediaCollectionView: NSCollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
+        
+        registerItemsForMediaCollectionView()
+    }
+    
+    func registerItemsForMediaCollectionView() {
+        mediaCollectionView.register(MediaAppendCollectionViewItem.self, forItemWithIdentifier: NSUserInterfaceItemIdentifier("MediaAppendCollectionViewItem"))
+        mediaCollectionView.register(MediaPreviewCollectionViewItem.self, forItemWithIdentifier: NSUserInterfaceItemIdentifier("MediaPreviewCollectionViewItem"))
     }
     
     override var nibName: NSNib.Name? {
@@ -23,7 +31,15 @@ class FMMediaBinViewController: NSViewController {
 
 extension FMMediaBinViewController:NSCollectionViewDataSource {
     func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
-        return MediaAppendCollectionViewItem()
+        if indexPath.item == 0 {
+            let item = collectionView.makeItem(withIdentifier: NSUserInterfaceItemIdentifier("MediaAppendCollectionViewItem"), for: indexPath)
+            return item
+        }
+        else {
+            let item = collectionView.makeItem(withIdentifier: NSUserInterfaceItemIdentifier("MediaPreviewCollectionViewItem"), for: indexPath)
+            
+            return item
+        }
     }
     
     func numberOfSections(in collectionView: NSCollectionView) -> Int {
