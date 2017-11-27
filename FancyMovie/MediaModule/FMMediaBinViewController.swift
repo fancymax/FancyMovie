@@ -20,3 +20,24 @@ class FMMediaBinViewController: NSViewController {
     }
     
 }
+
+extension FMMediaBinViewController:NSCollectionViewDataSource {
+    func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
+        return MediaAppendCollectionViewItem()
+    }
+    
+    func numberOfSections(in collectionView: NSCollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 4
+    }
+}
+
+extension FMMediaBinViewController:NSCollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: NSCollectionView, layout collectionViewLayout: NSCollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> NSSize {
+        return NSMakeSize(100, 100)
+    }
+    
+}

@@ -27,10 +27,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <box fixedFrame="YES" boxType="custom" borderType="none" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="n33-lW-Xlz">
-                        <rect key="frame" x="0.0" y="262" width="373" height="217"/>
+                        <rect key="frame" x="0.0" y="262" width="300" height="217"/>
                         <autoresizingMask key="autoresizingMask" heightSizable="YES"/>
                         <view key="contentView" ambiguous="YES" id="fdJ-DN-EqB">
-                            <rect key="frame" x="0.0" y="0.0" width="373" height="217"/>
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="217"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         </view>
                         <color key="fillColor" red="0.21444782614707947" green="0.21464082598686218" blue="0.21447771787643433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -45,10 +45,10 @@
                         <color key="fillColor" red="0.21444782614707947" green="0.21464082598686218" blue="0.21447771787643433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </box>
                     <box fixedFrame="YES" boxType="custom" borderType="none" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="e3b-6W-r9B">
-                        <rect key="frame" x="373" y="262" width="376" height="217"/>
+                        <rect key="frame" x="300" y="262" width="449" height="217"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <view key="contentView" ambiguous="YES" id="sGi-gl-afA">
-                            <rect key="frame" x="0.0" y="0.0" width="376" height="217"/>
+                            <rect key="frame" x="0.0" y="0.0" width="449" height="217"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         </view>
                         <color key="fillColor" red="0.21444782614707947" green="0.21464082598686218" blue="0.21447771787643433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -13,6 +13,8 @@
 		11058B151FC446CC0015B8E9 /* FMMediaBinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11058B131FC446CC0015B8E9 /* FMMediaBinViewController.xib */; };
 		11058B181FC446DE0015B8E9 /* FMTimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11058B161FC446DE0015B8E9 /* FMTimelineViewController.swift */; };
 		11058B191FC446DE0015B8E9 /* FMTimelineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11058B171FC446DE0015B8E9 /* FMTimelineViewController.xib */; };
+		1162D0D81FCBBCC0004EB41D /* MediaAppendCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1162D0D61FCBBCC0004EB41D /* MediaAppendCollectionViewItem.swift */; };
+		1162D0D91FCBBCC0004EB41D /* MediaAppendCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1162D0D71FCBBCC0004EB41D /* MediaAppendCollectionViewItem.xib */; };
 		1175C2411FC6E39B003C41FF /* FMPlayerbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1175C2401FC6E39B003C41FF /* FMPlayerbackView.swift */; };
 		11843AD91FBC5784005ABE98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11843AD81FBC5784005ABE98 /* AppDelegate.swift */; };
 		11843ADB1FBC5784005ABE98 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11843ADA1FBC5784005ABE98 /* Document.swift */; };
@@ -47,6 +49,8 @@
 		11058B131FC446CC0015B8E9 /* FMMediaBinViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FMMediaBinViewController.xib; sourceTree = "<group>"; };
 		11058B161FC446DE0015B8E9 /* FMTimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMTimelineViewController.swift; sourceTree = "<group>"; };
 		11058B171FC446DE0015B8E9 /* FMTimelineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FMTimelineViewController.xib; sourceTree = "<group>"; };
+		1162D0D61FCBBCC0004EB41D /* MediaAppendCollectionViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaAppendCollectionViewItem.swift; sourceTree = "<group>"; };
+		1162D0D71FCBBCC0004EB41D /* MediaAppendCollectionViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MediaAppendCollectionViewItem.xib; sourceTree = "<group>"; };
 		1175C2401FC6E39B003C41FF /* FMPlayerbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMPlayerbackView.swift; sourceTree = "<group>"; };
 		11843AD51FBC5784005ABE98 /* FancyMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FancyMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11843AD81FBC5784005ABE98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +172,8 @@
 			children = (
 				11058B121FC446CC0015B8E9 /* FMMediaBinViewController.swift */,
 				11058B131FC446CC0015B8E9 /* FMMediaBinViewController.xib */,
+				1162D0D61FCBBCC0004EB41D /* MediaAppendCollectionViewItem.swift */,
+				1162D0D71FCBBCC0004EB41D /* MediaAppendCollectionViewItem.xib */,
 			);
 			path = MediaModule;
 			sourceTree = "<group>";
@@ -289,6 +295,7 @@
 				11058B191FC446DE0015B8E9 /* FMTimelineViewController.xib in Resources */,
 				11843ADE1FBC5784005ABE98 /* Document.xib in Resources */,
 				11058B111FC4462D0015B8E9 /* FMPlayerViewController.xib in Resources */,
+				1162D0D91FCBBCC0004EB41D /* MediaAppendCollectionViewItem.xib in Resources */,
 				11843AE31FBC5784005ABE98 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11058B141FC446CC0015B8E9 /* FMMediaBinViewController.swift in Sources */,
+				1162D0D81FCBBCC0004EB41D /* MediaAppendCollectionViewItem.swift in Sources */,
 				11058B181FC446DE0015B8E9 /* FMTimelineViewController.swift in Sources */,
 				11058B101FC4462D0015B8E9 /* FMPlayerViewController.swift in Sources */,
 				1175C2411FC6E39B003C41FF /* FMPlayerbackView.swift in Sources */,
