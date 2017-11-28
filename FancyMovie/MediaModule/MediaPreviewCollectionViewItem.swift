@@ -9,10 +9,26 @@
 import Cocoa
 
 class MediaPreviewCollectionViewItem: NSCollectionViewItem {
-
+    
+    weak var resourceLoaderDelegate:ResourceLoaderDelegate?
+    
+    @IBOutlet weak var resouceImageView: NSImageView!
+    @IBOutlet weak var resouceFileNameTextfield: NSTextField!
+    
+    var index:IndexPath = IndexPath() {
+        didSet {
+            if let image = self.resourceLoaderDelegate?.loadThumbByIndexPath(index) {
+                resouceImageView.image = image
+            }
+            
+            if let name = self.resourceLoaderDelegate?.loadNameByIndexPath(index) {
+                resouceFileNameTextfield.stringValue = name
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
     }
     
     override var nibName: NSNib.Name? {
